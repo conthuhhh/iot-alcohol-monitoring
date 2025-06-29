@@ -69,8 +69,9 @@ ChartJS.register(
 )
 
 // URL API backend
-const API_URL = '/api/alcohol'
-const SOCKET_URL = ''
+const API_BASE = import.meta.env.VITE_API_URL?.replace(/\/$/, '') || '';
+const API_URL = `${API_BASE}/api/alcohol`;
+const SOCKET_URL = API_BASE;
 
 function App() {
   // Trạng thái dữ liệu
