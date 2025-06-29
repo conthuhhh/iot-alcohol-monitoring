@@ -33,11 +33,13 @@ const TicketForm = ({ alcoholValue, open, onClose, onTicketCreated }) => {
     content: () => ticketRef.current,
   });
 
+  const API_BASE = import.meta.env.VITE_API_URL?.replace(/\/$/, '') || '';
+
   const handleSubmit = async (e) => {
     e.preventDefault();
     
     try {
-      const response = await axios.post('/api/ticket', {
+      const response = await axios.post(`${API_BASE}/api/ticket`, {
         name,
         licensePlate,
         alcoholValue,
