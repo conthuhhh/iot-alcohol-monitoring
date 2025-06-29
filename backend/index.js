@@ -29,6 +29,9 @@ const io = new Server(server, {
 });
 app.set('io', io);
 
+const SOCKET_URL = import.meta.env.VITE_API_URL || '';
+io(SOCKET_URL, { ... });
+
 mongoose.connect(MONGODB_URI, {
   useNewUrlParser: true,
   useUnifiedTopology: true,
