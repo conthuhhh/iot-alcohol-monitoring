@@ -20,10 +20,12 @@ const TicketHistory = ({ reload }) => {
   const [loading, setLoading] = useState(false);
   const [pageSize, setPageSize] = useState(5);
 
+  const API_BASE = import.meta.env.VITE_API_URL?.replace(/\/$/, '') || '';
+
   const fetchTickets = async () => {
     setLoading(true);
     try {
-      const res = await axios.get('/api/ticket');
+      const res = await axios.get(`${API_BASE}/api/ticket`);
       setTickets(res.data.tickets || res.data || []);
     } catch (err) {
       setTickets([]);
