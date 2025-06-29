@@ -16,15 +16,9 @@ const MONGODB_URI = 'mongodb+srv://iotproject:171004@cluster0.szfrvwl.mongodb.ne
 app.use(cors());
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
-app.use(express.static(path.join(__dirname, '../frontend-vite/dist')));
 
 app.use('/api/alcohol', alcoholRoutes);
 app.use('/api/ticket', ticketRoutes);
-
-// Serve frontend for any route không phải API
-app.get(/^\/(?!api).*/, (req, res) => {
-  res.sendFile(path.join(__dirname, '../frontend-vite/dist/index.html'));
-});
 
 const server = http.createServer(app);
 const io = new Server(server, {
