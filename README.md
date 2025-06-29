@@ -74,4 +74,4 @@ Xem hướng dẫn kết nối ESP8266 với cảm biến MQ3 trong `src/ESP8266
 
 - Nếu giá trị đo không thay đổi: Kiểm tra kết nối cảm biến
 - Nếu không kết nối được WiFi: Kiểm tra thông tin SSID và password
-- Nếu không gửi được dữ liệu lên server: Kiểm tra địa chỉ IP server và cổng
+- Nếu không gửi được dữ liệu lên server: Kiểm tra địa chỉ IP server và cổng# iot-alcohol-monitoring
