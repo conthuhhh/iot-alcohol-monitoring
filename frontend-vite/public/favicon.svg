@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <!-- Breathalyzer device body -->
+  <rect x="20" y="30" width="60" height="60" rx="5" ry="5" fill="#5d6d7e"/>
+  <rect x="25" y="35" width="50" height="50" rx="3" ry="3" fill="#34495e"/>
+  
+  <!-- Display screen -->
+  <rect x="30" y="40" width="30" height="15" rx="2" ry="2" fill="#ecf0f1"/>
+  
+  <!-- Display value -->
+  <text x="45" y="52" font-family="Arial" font-size="10" fill="#2ecc71" text-anchor="middle">0.00</text>
+  
+  <!-- Power button -->
+  <circle cx="70" cy="45" r="5" fill="#e74c3c"/>
+  
+  <!-- Speaker grille -->
+  <rect x="30" y="60" width="30" height="15" rx="2" ry="2" fill="#7f8c8d"/>
+  <rect x="32" y="62" width="2" height="2" fill="#34495e"/>
+  <rect x="36" y="62" width="2" height="2" fill="#34495e"/>
+  <rect x="40" y="62" width="2" height="2" fill="#34495e"/>
+  <rect x="44" y="62" width="2" height="2" fill="#34495e"/>
+  <rect x="48" y="62" width="2" height="2" fill="#34495e"/>
+  <rect x="52" y="62" width="2" height="2" fill="#34495e"/>
+  <rect x="32" y="66" width="2" height="2" fill="#34495e"/>
+  <rect x="36" y="66" width="2" height="2" fill="#34495e"/>
+  <rect x="40" y="66" width="2" height="2" fill="#34495e"/>
+  <rect x="44" y="66" width="2" height="2" fill="#34495e"/>
+  <rect x="48" y="66" width="2" height="2" fill="#34495e"/>
+  <rect x="52" y="66" width="2" height="2" fill="#34495e"/>
+  
+  <!-- Mouthpiece -->
+  <rect x="15" y="45" width="10" height="8" rx="3" ry="3" fill="#7f8c8d"/>
+  
+  <!-- Silhouette hint -->
+  <path d="M10,30 C12,25 15,40 18,45 L15,45 L10,30" fill="#2c3e50"/>
+</svg> 
