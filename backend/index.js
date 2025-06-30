@@ -11,7 +11,7 @@ const { Server } = require('socket.io');
 const app = express();
 const PORT = process.env.PORT || 3000;
 
-const MONGODB_URI = 'mongodb+srv://iotproject:171004@cluster0.szfrvwl.mongodb.net/iot_alcohol?retryWrites=true&w=majority&appName=Cluster0';
+const MONGODB_URI = process.env.MONGODB_URI;
 
 app.use(cors());
 app.use(express.json());
@@ -28,9 +28,6 @@ const io = new Server(server, {
   }
 });
 app.set('io', io);
-
-const SOCKET_URL = import.meta.env.VITE_API_URL || '';
-io(SOCKET_URL, { ... });
 
 mongoose.connect(MONGODB_URI, {
   useNewUrlParser: true,
